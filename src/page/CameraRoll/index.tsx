@@ -1,7 +1,6 @@
 import {
     View, Image, StyleSheet,
-    SafeAreaView, FlatList, Text,
-    Pressable
+    SafeAreaView, FlatList, Pressable
 } from "react-native"
 import { useGetPhotosQuery } from "../../store/api/mars"
 import { useAppSelector } from "../../hooks/hooks"
@@ -79,9 +78,9 @@ export const CameraRoll = () => {
                                     numColumns={3}
                                 />
 
-                                : <Text style={styles.noData}>
+                                : <MyTextReg style={styles.noData}>
                                     No data
-                                </Text>
+                                </MyTextReg>
                         }
                     </View>
             }
